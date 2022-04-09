@@ -1,12 +1,48 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-family: 'Raleway' sans-serif; 
-  color: #212121;
+  font-family: 'Raleway' sans-serif;
+  width: 1600px;
+  margin: 0;
+  padding: 0 10px;
+  }
+  ul {
+    padding-inline-start: 0;
+    margin-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    list-style-type: none;
   }
   li {
-    display: block;
+    list-style-type: none;
   }
-/* Header */
+  h1, h2, h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  /* Header */
+  .hero {
+    width: 1200px;
+    margin: 0 215px;
+  }
+  .hero li:first-child {
+    margin-left: 93px;
+  }
+  .hero nav {
+    display: inline-flex;
+  }
+  .studio {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #212121;
+  font-size: 26px;
+  line-height: 1.17;
+  text-decoration: none;
+  margin: 24px 0 25px;
+ }
 .web {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -14,34 +50,26 @@ body {
   font-size: 26px;
   line-height: 1.17;
   text-decoration: none;
-  }
-.studio {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  color: #212121;
-  font-size: 26px;
-  line-height: 1.17;
-  text-decoration: none;
-  }
-.navigation > li >a {
+}
+.navigation li a {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   color: #212121;
   font-size: 14px;
   line-height: 1.17;
   text-decoration: none;
+  word-spacing: 50px;
   }
-.stud:hover {
-  color: #2196F3
+.navigation li {
+  float: left;
+  margin-top: 32px;
+  margin-right: 50px;
 }
-.studio_:hover {
-  color: #2196F3
+.navigation li:last-child {
+  margin-right: 0;
 }
-.port:hover {
-  color: #2196F3
-}
-.cont:hover {
-  color: #2196F3
+.navigation > li >a:hover {
+  color:#2196F3
 }
 .mail {
   font-family: 'Roboto', sans-serif;
@@ -50,6 +78,8 @@ body {
   font-size: 14px;
   line-height: 1.17;
   text-decoration: none;
+  margin-left: 331px;
+  margin-right: 50px;
 }
 .tel {
   font-family: 'Roboto', sans-serif;
@@ -59,71 +89,199 @@ body {
   line-height: 1.17;
   text-decoration: none;
 }
-.section {
-      background-color: #2F303A;
-  }
-  .title {
+/* Main */
+.container {
+  display: flex;
+  background: #2F303A;
+  width: 1600px;
+  height: 600px;
+}
+.title {
+  margin: 200px 452px 30px;
+    width: 696px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #FFFFFF;
     font-size: 44px;
     line-height: 1.3;
+    text-align: center;
   }
   .button {
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    width: 200px;
     background: #2196F3;
     color: #ffffff;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.06em;
+    border-radius: 4px;
+    margin-left: 700px;
+    margin-right: 700px;
+    text-align: center;
+    padding: 10px 30px;
   }
-  .button_chapters {
+  .container-portf {
+    display: flexbox;
+    width: 1200px;
+    margin-left: 215px;
+    margin-right: 215px;
+  }
+  .container-portf li {
+    display: flex;
+    flex-wrap: wrap;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    background: #F5F4FA;
     color: #212121;
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
     border-radius: 4px;
+    float: left;
+    margin-top: 100px;
+    margin-right: 8px;
   }
-  .button_chapters:hover {
+  .container-portf li:nth-child(3n+3) {
+    margin-right: 0;
+  }
+  .container-portf button {
+    background: #F5F4FA;
+  }
+  .button_chapters-f {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    width: 73px;
+    border-radius: 4px;
+    padding: 6px 22px;
+    margin-left: 294px;
+  }
+  .button_chapters-s {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    width: 128px;
+    border-radius: 4px;
+    padding: 6px 22px;
+  }
+  .button_chapters-t {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    width: 145px;
+    border-radius: 4px;
+    padding: 6px 22px;
+  }
+  .button_chapters-fo {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    width: 103px;
+    border-radius: 4px;
+    padding: 6px 22px;
+  }
+  .button_chapters-ff {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    width: 130px;
+    border-radius: 4px;
+    padding: 6px 22px;
+  }
+  .container-portf button:hover {
     background: #2196F3;
     color: #ffffff;
   }
-  .head_ > li >h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #212121;
-    font-size: 14px;
-    line-height: 1.14;
+
+  .container_f {
+    width: 1200px;
+    display: flex;
+    margin: 0 215px;
+  }
+  .container_f {
+    margin-top: 94px;
+    flex-direction: row;
+    margin-right: 30px;
+  }
+  .container_f li {
+    margin-right: 30px;
+  }
+  .container_f li:last-child {
+    margin-right: 0;
   }
   .text {
+    width: 270px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #757575;
     font-size: 14px;
     line-height: 1.7;
+    margin-top: 10px;
   }
-  .headr {
+  .about_work > {
+    display: block;
+    width: 1600;
+  }
+  .about_work h2 {
+    display: block;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #212121;
     font-size: 36px;
     line-height: 1.16;
+    margin-top: 289px;
+    margin-left: 612px;
   }
-  .team {
+  .container_s {
+    display: inline-block;
+    width: 1200px;
+    margin-left: 215px;
+    margin-bottom: 94px; 
+  }
+  .container_s h2 {
+    width: 376px;
+    margin: 94px 397px 50px;
+    text-align: center;
+  }
+  .images {
+    display: flex;
+    float: left;
+    margin-top: 50px;
+    margin-right: 30px;
+  }
+  .images:last-child {
+    margin-right: 0;
+  }
+  .section_t {
     background: #F5F4FA;
   }
-  .team_ {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #212121;
-    font-size: 36px;
-    line-height: 1.16;
+  .container_t {
+    width: 1200px;
+    display: inline-block;
+    width: 1200px;
+    margin-left: 215px;
+    margin-bottom: 94px;
+  }
+  .container_t h2 {
+    width: 264px;
+    margin-top: 94px;
+    margin-left: 453px;
+    text-align: center;
+  }
+  .name li {
+    background: #FFFFFF;
+    float: left;
+    width: 270;
+    margin-top: 50px;
+    margin-right: 30px;
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  .name li:last-child {
+    margin-right: 0;
   }
   .name >li >h3 {
     font-family: 'Roboto', sans-serif;
@@ -131,6 +289,46 @@ body {
     color: #212121;
     font-size: 16px;
     line-height: 1.12;
+    margin-top: 30px;
+  }
+  .name p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .name_port {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    align-items: flex-start;
+    margin-top: 94px;
+    margin-bottom: 94px;
+    text-align: center;
+  }
+  .name_port li {
+    display: inline;
+    width: 370px;
+    flex-wrap: wrap;
+    background: #FFFFFF;
+    margin-top: 50px;
+    margin-right: 30px;
+    text-align: left;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  .name_port li:last-child {
+    margin-right: 0;
+  }
+  .name_port >li >h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #212121;
+    font-size: 16px;
+    line-height: 1.12;
+    margin-top: 30px;
+  }
+  .name_port h3 {
+    margin: 20px 24px 4px;
+    box-align: left;
   }
   .profession {
     font-family: 'Roboto', sans-serif;
@@ -138,14 +336,17 @@ body {
     color: #757575;
     font-size: 16px;
     line-height: 1.12;
+    margin-bottom: 24px;
   }
-
-  .name_ >li >h3 {
+  .profession_p {
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #212121;
-    font-size: 18px;
-    line-height: 2.0;
+    font-weight: 400;
+    text-align: left;
+    color: #757575;
+    font-size: 16px;
+    line-height: 1.12;
+    margin-bottom: 24px;
+    margin-left: 24px;
   }
   .type {
     font-family: 'Roboto', sans-serif;
@@ -156,15 +357,25 @@ body {
   }
 
   .footer {
+    display: block;
     background: #2F303A;
+    width: 1600px;
+    height: 252px;
+  }
+  .container_fot {
+    width: 1200px;
+    margin: 0 215px;
   }
   .studioo {
+    display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #FFFFFF;
     font-size: 26px;
     line-height: 1.15;
     text-decoration: none;
+    margin-top: 60px;
+    margin-bottom: 20px;
   }
   .adres {
     font-family: 'Roboto', sans-serif;
@@ -174,8 +385,10 @@ body {
     line-height: 1.7;
     text-decoration: none;
     font-style: normal;
+    margin-bottom: 9px;
   }
   .maill {
+    display: inline-flex;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.6);
@@ -183,8 +396,10 @@ body {
     line-height: 1.7;
     text-decoration: none;
     font-style: normal;
+    margin-bottom: 9px;
   }
   .tell {
+    display: inline-flex;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.6);
@@ -192,4 +407,5 @@ body {
     line-height: 1.7;
     text-decoration: none;
     font-style: normal;
+    margin-bottom: 60px;
   }
