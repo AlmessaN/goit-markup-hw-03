@@ -406,6 +406,7 @@ body {
 
   .footer {
     background: #2F303A;
+    padding: 0 15px;
     width: 1600px;
     height: 252px;
   }
