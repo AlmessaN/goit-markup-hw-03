@@ -39,6 +39,7 @@ body {
   }
   .hero-sec {
     border: 1px solid #ECECEC;
+    width: 1600px;
   }
   .stud {
     width: 49px;
@@ -121,9 +122,9 @@ body {
 /* Main */
 .container {
   display: block;
-  justify-content: center;
-  background: #2F303A;
+  align-items: center;
   width: 1600px;
+  background: #2F303A;
   height: 600px;
 }
 .title {
@@ -153,6 +154,7 @@ body {
   .container-portf {
     width: 1200px;
     padding-top: 94px;
+    padding-bottom: 94px;
     margin: 0 auto;
   }
   .container-portf li {
@@ -221,19 +223,30 @@ body {
     color: #ffffff;
   }
 
-  .container_f {
-    display: block;
+  .container_ {
     width: 1200px;
     margin: 0 auto;
+    padding-top: 94px;
   }
-  .container_f li {
-    float: left;
+  .container_ .images {
+    padding-bottom: 94px;
+  }
+  .container_ ul {
+    display: inline-block;
+    list-style: none;
+  }
+  .container_ .name {
+    padding-bottom: 94px;
+    padding-top: 0;
+  }
+  .container_ li {
+    display: inline-block;
     margin-right: 30px;
   }
-  .container_f li:last-child {
+  .container_ li:last-child {
     margin-right: 0;
   }
-  .container_f h3 {
+  .container_ h3 {
     width: 270px;
     font-family: 'Roboto';
     font-style: normal;
@@ -265,19 +278,13 @@ body {
     margin-top: 289px;
     margin-left: 612px;
   }
-  .container_s {
-    width: 1200px;
-    text-align: center;
-    padding-bottom: 94px; 
-    margin: 0 auto;
-  }
-  .container_s h2 {
+  .container_ h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    margin: auto;
+    margin: 0 auto;
     width: 376px;
   }
   .images {
@@ -289,32 +296,22 @@ body {
     margin-right: 0;
   }
   .section {
-    display: inline-block;
-    text-align: center;
-    width: 1600px;
-    padding-bottom: 94px;
+    max-width: 1600px;
     padding-left: 15px;
     padding-right: 15px;
   }
-  .section > .container_f {
+  .section > .container_ {
     text-align: left;
   }
   .section_t {
-    display: inline-block;
+    align-items: center;
     width: 1600px;
     padding: 94px 0;
-    background: #F5F4FA;
     padding-bottom: 94px;
     padding-left: 15px;
     padding-right: 15px;
   }
-  .container_t {
-    width: 1200px;
-    display: block;
-    margin: 0 auto;
-  }
-  .container_t h2 {
-    width: 264px;
+  .container_ h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
