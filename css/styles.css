@@ -25,12 +25,14 @@ body {
   /* Header */
   .hero {
     width: 1200px;
-    margin: auto;
+    text-align: center;
+    margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
   }
   .hero_ {
     width: 1200px;
+    text-align: center;
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -50,13 +52,13 @@ body {
   .hero_ li:first-child {
     padding-left: 93px;
   }
-  .hero_ nav {
-    display: inline-flex;
-  }
   .hero li:first-child {
     padding-left: 93px;
   }
   .hero nav {
+    display: inline-flex;
+  }
+  .hero_ nav {
     display: inline-flex;
   }
   .studio {
@@ -86,7 +88,8 @@ body {
   word-spacing: 50px;
   }
 .navigation li {
-  float: left;
+  display: inline-block;
+  text-align: center;
   padding-top: 32px;
   margin-right: 50px;
 }
