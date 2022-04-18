@@ -155,7 +155,6 @@ body {
     font-weight: 700;
     width: 200px;
     height: 50px;
-    margin-bottom: 200px;
     background: #2196F3;
     color: #ffffff;
     font-size: 16px;
@@ -192,15 +191,20 @@ body {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
     width: 73px;
     border-radius: 4px;
     padding: 6px 22px;
-    margin-left: 294px;
+    margin-left: 294px
+
   }
   .button_chapters-s {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
     width: 128px;
     border-radius: 4px;
     padding: 6px 22px;
@@ -209,6 +213,8 @@ body {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
     width: 145px;
     border-radius: 4px;
     padding: 6px 22px;
@@ -217,6 +223,8 @@ body {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
     width: 103px;
     border-radius: 4px;
     padding: 6px 22px;
@@ -225,6 +233,8 @@ body {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
     width: 130px;
     border-radius: 4px;
     padding: 6px 22px;
@@ -233,7 +243,9 @@ body {
     background: #2196F3;
     color: #ffffff;
   }
-
+  .section {
+    padding-top: 94px;
+  }
   .container_second {
     display: flex;
     flex-wrap: wrap;
@@ -254,8 +266,7 @@ body {
   .container_second li:last-child {
     margin-right: 0;
   }
-  .container_second h3 {
-    width: 270px;
+  .title-second {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -308,25 +319,25 @@ body {
   .images:last-child {
     margin-right: 0;
   }
-section {
+.section {
     display:block;
     align-content: center;
     margin: 0 auto;
     padding: 94px 0;
   }
-section:nth-child(4) {
+.section:nth-child(4) {
     background-color: #F5F4FA;
     padding-top: 94px;
   }
-section:nth-child(1) {
+.button-use {
   padding-top: 0;
   padding-bottom: 0;
 }
-section:nth-child(3) {
+.section:nth-child(3) {
   padding-top: 0;
   padding-bottom: 94px;
 }
-section > .container_second {
+.section > .container_second {
     text-align: left;
   }
   .section_t {
