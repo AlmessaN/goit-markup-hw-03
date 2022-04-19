@@ -137,12 +137,12 @@ body {
   text-align: center;
   margin: 0 auto;
   background: #2F303A;
+  padding-top: 200px;
   padding-bottom: 200px;
 }
 .title {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    padding-top: 200px;
     color: #FFFFFF;
     font-size: 44px;
     line-height: 1.3;
@@ -269,10 +269,10 @@ body {
   .title-second {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
   }
   .title-first {
     font-family: 'Roboto';
@@ -446,6 +446,11 @@ body {
     background: #2F303A;
     margin: 0 auto;
     padding: 60px 0;
+  }
+  .address {
+    display: block;
+    margin-bottom: 9px;
+
   }
   .studioo {
     width: 145px;
